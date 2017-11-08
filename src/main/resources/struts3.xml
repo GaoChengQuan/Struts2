@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- 
+	package:定义一个包，作用管理action，通常一个业务模块一个包。
+	name：包的名字，包名不能重复
+	extends:当前包继承自哪个包
+			在struts中包一定继承自struts-default.
+			struts-default在struts-default.xml中定的包
+	namespace:命名空间，默认为"/",作为路径的一部分。
+			访问路径：http://localhost:8080/项目/命名空间/ActionName
+    action:配置请求路径与Action类的映射关系。
+    		name:请求路径的名字
+    		class：请求路径对应的action类的全名
+    		method：请求处理方法
+    result:结果映射
+    	name:action处理方法返回值.
+    	type:跳转的结果类型
+    	标签中跳转的页面
+ -->
+	<package name="config" namespace="/user" extends="struts-default">
+		<action name="user_*"  class="com.situ.struts.controller.UserAction" method="{1}">
+			<result name="{1}">/{1}.jsp</result>
+		</action>
+	</package>
+</struts>
+
+

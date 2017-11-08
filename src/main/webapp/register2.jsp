@@ -8,9 +8,9 @@
 </head>
 <body>
 	<form action="${pageContext.request.contextPath}/params/user_register.action" method="post">
-	        用户名:<input type="text" name="name"><br/>
-	        年龄:<input type="text" name="age"><br/>
-	        生日:<input type="text" name="birthday"><br/>
+	        用户名:<input type="text" name="user.name"><br/>
+	        年龄:<input type="text" name="user.age"><br/>
+	        生日:<input type="text" name="user.birthday"><br/>
 	        
 	  <input type="submit" value="注册">
     </form>

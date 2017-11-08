@@ -13,7 +13,7 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 	
-	<!-- struts2核心过滤器 --> 
+	<!-- 引入struts核心过滤器(这里直接就是Servlet里面的过滤器，但是Struts的核心是拦截器) --> 
 	<filter>
 		<filter-name>struts2</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>

@@ -7,13 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="${pageContext.request.contextPath}/params/user_register.action" method="post">
-	        用户名:<input type="text" name="name"><br/>
-	        年龄:<input type="text" name="age"><br/>
-	        生日:<input type="text" name="birthday"><br/>
-	        
-	  <input type="submit" value="注册">
-    </form>
-
+	Success.jsp
 </body>
 </html>
