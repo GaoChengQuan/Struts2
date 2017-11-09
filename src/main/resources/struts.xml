@@ -6,7 +6,11 @@
  	<!-- 总配置文件：引入其他所有配置文件 -->
 	<include file="constant.xml"></include> 	
 	<include file="com/situ/struts/config/config.xml"></include>
-	<include file="com/situ/struts/data/params.xml"></include>
+	<include file="com/situ/struts/params/params.xml"></include>
+	<include file="com/situ/struts/upload/upload.xml"></include>
+	<include file="com/situ/struts/interceptor/interceptor.xml"></include>
+	<include file="com/situ/struts/data/data.xml"></include>
+	<include file="com/situ/struts/controller/login.xml"></include>
 </struts>
 
 

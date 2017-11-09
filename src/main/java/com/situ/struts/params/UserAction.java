@@ -1,4 +1,4 @@
-package com.situ.struts.data;
+package com.situ.struts.params;
 
 import java.util.Date;
 

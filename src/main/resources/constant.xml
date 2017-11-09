@@ -15,4 +15,6 @@
 	<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
 	<!-- 4. 修改上传文件的最大大小为30M -->
 	<constant name="struts.multipart.maxSize" value="31457280"/>
+	
+	<constant name="struts.devMode" value="true" />
 </struts>

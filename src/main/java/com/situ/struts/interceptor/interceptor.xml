@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="interceptor" namespace="/" extends="struts-default">
+    	<!-- 拦截器配置 -->
+    	<interceptors>
+    		<!-- 自定义一个栈： 要引用默认栈、自定义的拦截器 -->
+    		<interceptor name="myInterceptor" class="com.situ.struts.interceptor.MyInterceptor"></interceptor>
+    		
+    		<interceptor-stack name="myStack">
+    		 	<!-- 引用默认栈 (一定要放到第一行)-->
+    			<interceptor-ref name="defaultStack"></interceptor-ref>
+    			<interceptor-ref name="myInterceptor"></interceptor-ref>
+    		</interceptor-stack>
+    	</interceptors>
+    	
+    	<!-- 【装配拦截器】 -->
+    	<default-interceptor-ref name="myStack"/>
+    	
+    	<action name="interceptorAction" class="com.situ.struts.interceptor.InterceptorAction" method="register">
+    		<result name="success">/common/success.jsp</result>
+    	</action>
+    	
+    </package> 
+</struts>

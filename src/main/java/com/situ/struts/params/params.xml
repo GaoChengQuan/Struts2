@@ -5,7 +5,7 @@
 <struts>
 
 	<package name="params" namespace="/params" extends="struts-default">
-		<action name="user_*" class="com.situ.struts.data.UserAction2" method="{1}">
+		<action name="user_*" class="com.situ.struts.params.UserAction2" method="{1}">
 			<result name="{1}">/{1}.jsp</result>
 		</action>
 	</package>
